@@ -69,9 +69,9 @@ body{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(192, 208, 229);
-    box-shadow: 0 4px 4px -3px #232323;
-    -moz-box-shadow: 0 4px 4px -3px #232323;
+    background-color: rgba(192, 208, 229, 0);
+    <!--box-shadow: 0 4px 4px -3px #232323;
+    -moz-box-shadow: 0 4px 4px -3px #232323;-->
     -webkit-box-shadow: 0 4px 4px -3px #232323;
     overflow: hidden;
     transition: all 0.4s ease-in-out;
@@ -193,92 +193,73 @@ body{
     </div>
 
     <ul class="menulist">
-      <li><a class="menuitems" href="#">RESUME</a></li>
+      <li><a class="menuitems" href="">RESUME</a></li>
       <li><a class="menuitems" href="#">PROJECTS</a></li>
       <li><a class="menuitems" href="#">CONTACT</a></li>
     </ul>
     </div>
 
-    <div class="main" id="main" style="border: 1px solid red">
+    <div class="main" id="main" style="background-color: #404040; text-align: center;">
 
-    <header style="width:100%;">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 800px;">
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active">
-            <img src="./imgs/CarModel.jpg">
-            <div class="carousel-caption d-none d-md-block">
+      <header style="width:100;">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 100%;">
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active">
+              <img src="./imgs/CarModel.jpg">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item">
+              <img src="./imgs/WalleResize.jpg">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
             </div>
           </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item">
-            <img src="./imgs/Walle.jpg">
-            <div class="carousel-caption d-none d-md-block">
-            </div>
-          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </header>
+      </header>
 
-    <!-- Page Content -->
-    <div class="container">
-      <br>
-      <h2 class="display-4" style="text-align: center;"><i>Sheric Davis</i></h2>
+      <br><br>
+      <!-- Page Content -->
+      <div style="background-color: rgb(249, 249, 249); width: 85%; margin: 0 auto; text-align: center;">
+        <br><br>
+        <h2 class="display-4" style="text-align: center;"><i>Sheric Davis</i></h2>
 
-      <!-- Marketing Icons Section -->
-
-      <section>
-          <div class="container">
-            <p>Hi, my name is Sheric Davis and I’m an amature animator.</p>
-            <p>I currently live in Cary, North Carolina. I graduated from Lipscomb University located in Nashville, Tennessee, with a BFA in Animation - a new program that me and two others were the first to fully go through. Some would call us guinea pigs but more optimistic people would call us trail blazers. This new program was under the guidance of Tom Bancroft a former Disney animator. In this program, I was able to learn 2D animation, 3D animation, concept design, character design, storyboarding, 3D modeling, and a whole lot more. I did all of this while working about 30-32 hours a week and somehow still managed to graduate with cum laude honors (who needs sleep?).  My dream is to get into the 3D world no matter where I start and really hone my skills. So, please take a look at my work and if you have any questions or just want to chat feel free to contact me!</p>
-          </div>
-        </section>
+        <!-- Marketing Icons Section -->
 
         <section>
             <div class="container">
-              <div class="row align-items-center">
-                <div class="col-md-6">
-                  <div class="p-5">
-                    <div class="view overlay">
-                        <img src="https://mdbootstrap.com/img/Photos/Others/forest-sm.jpg" class="img-fluid" alt="smaple image">
-                        <div class="mask flex-center rgba-green-slight">
-                            <p class="white-text">Super light overlay</p>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="p-5">
-                    <a href="nav/therapy/services.html"><h2 class="display-4">Therapy Clinic</h2></a>
-                    <p>The High Hopes Pediatric Therapy Clinic welcomes children and youth, birth through age 21, into an enjoyable, kid-friendly environment where therapy is both fun and rewarding!  Our state-of-the-art clinic is comprised of large rooms for strength-training, sensory and other activities, as well as individual treatment rooms with parent observation windows. </p>
-                  </div>
-                </div>
-              </div>
+              <p style="font-size: 1.2em;">Hi, my name is Sheric Davis and I’m an amature animator.</p>
+              <p style="font-size: 1.2em;">I currently live in Cary, North Carolina. I graduated from Lipscomb University located in Nashville, Tennessee, with a BFA in Animation - a new program that me and two others were the first to fully go through. Some would call us guinea pigs but more optimistic people would call us trail blazers. This new program was under the guidance of Tom Bancroft a former Disney animator. In this program, I was able to learn 2D animation, 3D animation, concept design, character design, storyboarding, 3D modeling, and a whole lot more. I did all of this while working about 30-32 hours a week and somehow still managed to graduate with cum laude honors (who needs sleep?).  My dream is to get into the 3D world no matter where I start and really hone my skills. So, please take a look at my work and if you have any questions or just want to chat feel free to contact me!</p>
             </div>
           </section>
-
 
           <section>
               <div class="container">
                 <div class="row align-items-center">
-                  <div class="col-md-6 order-2">
+                  <div class="col-md-6">
                     <div class="p-5">
-                      <img class="img-fluid rounded-circle" src="https://image.freepik.com/free-photo/business-teamwork-join-hands-together-business-teamwork-concept_1150-1804.jpg" alt="">
+                      <div class="view overlay">
+                          <img src="https://mdbootstrap.com/img/Photos/Others/forest-sm.jpg" class="img-fluid" alt="smaple image">
+                          <div class="mask flex-center rgba-green-slight">
+                              <p class="white-text">Super light overlay</p>
+                          </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-md-6 order-1">
+                  <div class="col-md-6">
                     <div class="p-5">
-                     <a href="nav/give/involve.html"> <h2 class="display-4">Making a Difference</h2></a>
-                      <p>High Hopes Development Center relies solely on the generosity of individuals, corporations and foundations. On behalf of over 600 families who benefited during our 2015-2016 fiscal year from High Hopes, thank you for your desire to partner with us and for believing in our amazing children.</p>
-
+                      <a href="nav/therapy/services.html"><h2 class="display-4">Therapy Clinic</h2></a>
+                      <p>The High Hopes Pediatric Therapy Clinic welcomes children and youth, birth through age 21, into an enjoyable, kid-friendly environment where therapy is both fun and rewarding!  Our state-of-the-art clinic is comprised of large rooms for strength-training, sensory and other activities, as well as individual treatment rooms with parent observation windows. </p>
                     </div>
                   </div>
                 </div>
@@ -286,83 +267,103 @@ body{
             </section>
 
 
-  <br>
-  <hr>
+            <section>
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-6 order-2">
+                      <div class="p-5">
+                        <img class="img-fluid rounded-circle" src="https://image.freepik.com/free-photo/business-teamwork-join-hands-together-business-teamwork-concept_1150-1804.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-md-6 order-1">
+                      <div class="p-5">
+                       <a href="nav/give/involve.html"> <h2 class="display-4">Making a Difference</h2></a>
+                        <p>High Hopes Development Center relies solely on the generosity of individuals, corporations and foundations. On behalf of over 600 families who benefited during our 2015-2016 fiscal year from High Hopes, thank you for your desire to partner with us and for believing in our amazing children.</p>
 
-      <!-- Portfolio Section -->
-      <h2 class = display-4>Our Generous Donors</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
 
-      <div class="row">
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100 hoverable">
-            <a href="#"><img class="card-img-top" src="https://i.ytimg.com/vi/90oQiXzdiXM/maxresdefault.jpg" width = "400" height = "200" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Nashville Predators</a>
-              </h4>
-              <p class="card-text">Go Sounds</p>
+
+        <br>
+        <hr>
+
+        <!-- Portfolio Section -->
+        <h2 class = display-4>Our Generous Donors</h2>
+
+        <div class="row container" style="margin: 0 auto;">
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100 hoverable">
+              <a href="#"><img class="card-img-top" src="https://i.ytimg.com/vi/90oQiXzdiXM/maxresdefault.jpg" width = "400" height = "200" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Nashville Predators</a>
+                </h4>
+                <p class="card-text">Go Sounds</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="https://news.vanderbilt.edu/files/CHC_logo_fi-585x299.jpg" width = "400" height = "200" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Community Health Charities</a>
+                </h4>
+                <p class="card-text">Platinum Sponsor</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Community Project</a>
+                </h4>
+                <p class="card-text">Donated serveral $5 Bills</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="http://flower-wallpaper.org/wp-content/uploads/2016/10/kroger-flowers-wallpaper7.jpg" width = "400" height = "200" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Kroger</a>
+                </h4>
+                <p class="card-text">Provided volunteers for recent event</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="https://www.hdwallpapers.net/previews/tapmates-logo-294.jpg" width = "400" height = "200" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Tapmates</a>
+                </h4>
+                <p class="card-text">Donated equipment and funds for pediatric therapy programs</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="http://www.unitedway-york.org/sites/unitedway-york.org/themes/unitedway/images/unitedway_600x315.png" width = "400" height = "200" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">United Way</a>
+                </h4>
+                <p class="card-text">Bronze III Sponsor</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="https://news.vanderbilt.edu/files/CHC_logo_fi-585x299.jpg" width = "400" height = "200" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Community Health Charities</a>
-              </h4>
-              <p class="card-text">Platinum Sponsor</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Community Project</a>
-              </h4>
-              <p class="card-text">Donated serveral $5 Bills</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://flower-wallpaper.org/wp-content/uploads/2016/10/kroger-flowers-wallpaper7.jpg" width = "400" height = "200" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Kroger</a>
-              </h4>
-              <p class="card-text">Provided volunteers for recent event</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="https://www.hdwallpapers.net/previews/tapmates-logo-294.jpg" width = "400" height = "200" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Tapmates</a>
-              </h4>
-              <p class="card-text">Donated equipment and funds for pediatric therapy programs</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://www.unitedway-york.org/sites/unitedway-york.org/themes/unitedway/images/unitedway_600x315.png" width = "400" height = "200" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">United Way</a>
-              </h4>
-              <p class="card-text">Bronze III Sponsor</p>
-            </div>
-          </div>
-        </div>
+        <!-- /.row -->
+
       </div>
-      <!-- /.row -->
-
-    </div>
-    <!-- /.container -->
+      <!-- /.container -->
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
@@ -410,7 +411,7 @@ body{
       nav.style.width = "75px";
     	nav.style.height = "75px";
     	main.style.marginTop = "-56px";
-
+      nav.style.backgroundColor = "rgba(0,0,0,0)";
         	var i = 0;
         	for (i = 0; i < menu.length; i++){
     	menu[i].style.opacity="0.0";
@@ -423,6 +424,7 @@ body{
       nav.style.width = "98.75%";
     	nav.style.height = "300px";
     	main.style.marginTop = "300px";
+      nav.style.backgroundColor = "rgb(192, 208, 229)";
         	var i = 0;
         	for (i = 0; i < menu.length; i++){
     	menu[i].style.opacity="1.0";
