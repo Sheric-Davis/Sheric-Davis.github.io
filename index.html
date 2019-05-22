@@ -52,7 +52,7 @@
 
 .main{
   margin: 0 auto;
-  width: 85%;
+  width: 100%;
 }
 
 body{
@@ -181,6 +181,7 @@ body{
 }
 </style>
   <body>
+
     <div id="topNav" class="navigation">
       <span id="closebtn" onclick="navToggle()">
           <span class="line1"></span>
@@ -198,9 +199,9 @@ body{
     </ul>
     </div>
 
-    <div class="main" id="main">
+    <div class="main" id="main" style="border: 1px solid red">
 
-    <header style="width:100%; margin-top: 80px;">
+    <header style="width:100%;">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 800px;">
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
@@ -236,8 +237,8 @@ body{
 
       <section>
           <div class="container">
-            <p>Hi, my names Sheric Davis and I’m an amature animator.</p>
-            <p>I currently live in Cary, North Carolina. I graduated from Lipscomb University located in Nashville, Tennessee, with a BFA in Animation- a new program that me and two others were the first to fully go through. Some would call us guinea pigs but more optimistic people would call us trail blazers. This new program was under the guidance of Tom Bancroft a former Disney animator. In this program I was able to learn 2D animation, 3D animation, concept design, character design, storyboarding, 3D modeling, and a whole lot more. I did all of this while working about 30-32 hours a week and somehow still managed to graduate with cum laude honors (who needs sleep?).  My dream is to get into the 3D world no matter where I start and really hone my skills. So, please take a look at my work and if you have any questions or just want to chat feel free to contact me!</p>
+            <p>Hi, my name is Sheric Davis and I’m an amature animator.</p>
+            <p>I currently live in Cary, North Carolina. I graduated from Lipscomb University located in Nashville, Tennessee, with a BFA in Animation - a new program that me and two others were the first to fully go through. Some would call us guinea pigs but more optimistic people would call us trail blazers. This new program was under the guidance of Tom Bancroft a former Disney animator. In this program, I was able to learn 2D animation, 3D animation, concept design, character design, storyboarding, 3D modeling, and a whole lot more. I did all of this while working about 30-32 hours a week and somehow still managed to graduate with cum laude honors (who needs sleep?).  My dream is to get into the 3D world no matter where I start and really hone my skills. So, please take a look at my work and if you have any questions or just want to chat feel free to contact me!</p>
           </div>
         </section>
 
@@ -393,7 +394,7 @@ body{
 
     //default to measure if/else from
     nav.style.height = "75px";
-    main.style.marginTop = "75px";
+    main.style.marginTop = "-56px";
     for (i = 0; i < menu.length; i++){menu[i].style.marginTop="100px";};
 
     close.addEventListener("click", function(){
@@ -408,7 +409,7 @@ body{
     	if (nav.style.height <= "300px") {
       nav.style.width = "75px";
     	nav.style.height = "75px";
-    	main.style.marginTop = "75px";
+    	main.style.marginTop = "-56px";
 
         	var i = 0;
         	for (i = 0; i < menu.length; i++){
