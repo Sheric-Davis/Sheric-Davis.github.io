@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sheric Davis</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+  </head>
+
+<style>
+
+@font-face {
+  font-family: "Cassandra";
+  src: url("Cassandra.ttf")
+}
+
+.container{
+  color: rgb(36, 36, 36);
+}
+
+.carousel-item img{
+  width: 100%;
+  height: 100%;
+}
+
+.carousel div{
+  height: 100%;
+}
+
+.strokeme
+{
+    color: black;
+    text-shadow:
+    -1px -1px white,
+    1px -1px white,
+    -1px 1px white,
+    1px 1px white;
+}
+
+.main{
+  margin: 0 auto;
+  width: 100%;
+}
+
+body{
+  background-color: #404040;
+}
+
+
+.navigation {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(192, 208, 229, 0);
+    <!--box-shadow: 0 4px 4px -3px #232323;
+    -moz-box-shadow: 0 4px 4px -3px #232323;-->
+    -webkit-box-shadow: 0 4px 4px -3px #232323;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    padding-top: 0px;
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
+.navigation ul {
+    margin-top:30px;
+    text-align:center;
+    list-style:none;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.menulist {
+    width:200px;
+}
+
+.logo {
+    text-align:center;
+    margin:0 auto;
+}
+
+.line1, .line2, .line3{
+  margin-top:5px;
+  <!--background-color:#fff;-->
+  width:25px;
+  height:3px;
+  display:block;
+  position:relative;
+  opacity:1.0;
+  border-radius:15%;
+  transition: all .3s;
+}
+
+.line1{
+  background-color: #fff;
+}
+.line2{
+  background-color: green;
+}
+.line3{
+  background-color:blue;
+}
+
+.line1.active {
+  transform: rotate(270deg);
+  opacity:0.0;
+  background-color:yellow;
+  top:5px;
+}
+
+.line2.active {
+  transform: rotate(45deg);
+  background-color:yellow;
+}
+
+.line3.active {
+  transform: rotate(-45deg);
+  background-color:yellow;
+  top:-7px;
+}
+
+.menuitems {
+    padding-top:12px;
+    padding-bottom:12px;
+    text-decoration: none;
+    list-style:none;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    display: inline-block;
+    position:relative;
+    text-align:center;
+    color: #fff;
+    opacity:0.0;
+    transition: all .5s ease-in-out;
+}
+
+.menuitems:after {
+  content:'';
+  display:block;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width .2s;
+}
+
+.menuitems:hover::after {
+    width:100%;
+}
+
+
+.projectHeader{
+  text-align: left;
+  padding-left: 2%;
+}
+
+#closebtn {
+    height:25px;
+    width:25px;
+    position: absolute;
+    text-decoration:none;
+    top: 20px;
+    left: 25px;
+    font-size: 36px !important;
+    margin-right: 50px;
+    z-index:100;
+    color:#fff;
+    cursor:pointer;
+    trainsition:background-position .3s;
+}
+
+#main {
+    background-color: #404040;
+    transition: margin-top .4s;
+    text-align:center;
+    margin:auto;
+}
+</style>
+  <body>
+
+    <div id="topNav" class="navigation">
+      <span id="closebtn" onclick="navToggle()">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+      </span>
+    <div class="logo">
+      <img src=""/>
+    </div>
+
+    <ul class="menulist">
+      <li><a class="menuitems" href="./index.html">HOME</a></li>
+      <li><a class="menuitems" href="./Resume.pdf">RESUME</a></li>
+      <li><a class="menuitems" href="./">PROJECTS</a></li>
+      <li><a class="menuitems" href="#">CONTACT</a></li>
+    </ul>
+    </div>
+
+    <div class="main" id="main" style="text-align: center;">
+
+      <!-- Page Content -->
+      <div style="background-color: rgb(249, 249, 249); width: 85%; margin: 0 auto;">
+        <br>
+        <hr>
+
+        <!-- Portfolio Section -->
+        <h1 class="projectHeader" id="BeautyAndTheBeast"><i>Beauty and the Beast</i></h1><br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%; border-radius: 1%;">
+                <img src="imgs/img3.png" class="img-fluid" alt="smaple image">
+                <div class="mask flex-center rgba-stylish-strong">
+                    <p class="white-text">Super light overlay</p>
+                </div>
+            </div>
+            <div class="view overlay" style="float: right; width: 45%; border-radius: 1%;">
+                <img src="imgs/img5.png" class="img-fluid" alt="sample image">
+                <div class="mask flex-center rgba-stylish-strong">
+                    <p class="white-text">Super light overlay</p>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%; border-radius: 1%;">
+                <img src="imgs/img3.png" class="img-fluid" alt="smaple image">
+                <div class="mask flex-center rgba-stylish-strong">
+                    <p class="white-text">Super light overlay</p>
+                </div>
+            </div>
+            <div class="view overlay" style="float: right; width: 45%; border-radius: 1%;">
+                <img src="imgs/img5.png" class="img-fluid" alt="sample image">
+                <div class="mask flex-center rgba-stylish-strong">
+                    <p class="white-text">Super light overlay</p>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h1 class="projectHeader" id="DeadSeaSquirrels"><i>Dead Sea Squirrels</i></h1><br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%; border-radius: 1%;">
+                <img src="imgs/img3.png" class="img-fluid" alt="smaple image">
+                <div class="mask flex-center rgba-stylish-strong">
+                    <p class="white-text">Super light overlay</p>
+                </div>
+            </div>
+            <div class="view overlay" style="float: right; width: 45%; border-radius: 1%;">
+                <img src="imgs/img5.png" class="img-fluid" alt="sample image">
+                <div class="mask flex-center rgba-stylish-strong">
+                    <p class="white-text">Super light overlay</p>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%; border-radius: 1%;">
+                <img src="imgs/img3.png" class="img-fluid" alt="smaple image">
+                <div class="mask flex-center rgba-stylish-strong">
+                    <p class="white-text">Super light overlay</p>
+                </div>
+            </div>
+            <div class="view overlay" style="float: right; width: 45%; border-radius: 1%;">
+                <img src="imgs/img5.png" class="img-fluid" alt="sample image">
+                <div class="mask flex-center rgba-stylish-strong">
+                    <p class="white-text">Super light overlay</p>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h1 class="projectHeader" id="HangryJack"><i>Hangry Jack</i></h1><br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%; border-radius: 1%;">
+                <img src="imgs/img3.png" class="img-fluid" alt="smaple image">
+                <div class="mask flex-center rgba-stylish-strong">
+                    <p class="white-text">Super light overlay</p>
+                </div>
+            </div>
+            <div class="view overlay" style="float: right; width: 45%; border-radius: 1%;">
+                <img src="imgs/img5.png" class="img-fluid" alt="sample image">
+                <div class="mask flex-center rgba-stylish-strong">
+                    <p class="white-text">Super light overlay</p>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%; border-radius: 1%;">
+                <img src="imgs/img3.png" class="img-fluid" alt="smaple image">
+                <div class="mask flex-center rgba-stylish-strong">
+                    <p class="white-text">Super light overlay</p>
+                </div>
+            </div>
+            <div class="view overlay" style="float: right; width: 45%; border-radius: 1%;">
+                <img src="imgs/img5.png" class="img-fluid" alt="sample image">
+                <div class="mask flex-center rgba-stylish-strong">
+                    <p class="white-text">Super light overlay</p>
+                </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section style="margin-top: 25%;">
+          <div class="container">
+          </div>
+        </section>
+
+        <section>
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <div class="p-5">
+                    <div class="view overlay">
+                        <img src="https://mdbootstrap.com/img/Photos/Others/forest-sm.jpg" class="img-fluid" alt="smaple image">
+                        <div class="mask flex-center rgba-green-slight">
+                            <p class="white-text">Super light overlay</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="p-5">
+                    <a href="nav/therapy/services.html"><h2 class="display-4">Therapy Clinic</h2></a>
+                    <p>The High Hopes Pediatric Therapy Clinic welcomes children and youth, birth through age 21, into an enjoyable, kid-friendly environment where therapy is both fun and rewarding!  Our state-of-the-art clinic is comprised of large rooms for strength-training, sensory and other activities, as well as individual treatment rooms with parent observation windows. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <section>
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-6 order-2">
+                  <div class="p-5">
+                    <img class="img-fluid rounded-circle" src="https://image.freepik.com/free-photo/business-teamwork-join-hands-together-business-teamwork-concept_1150-1804.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6 order-1">
+                  <div class="p-5">
+                    <a href="nav/give/involve.html"> <h2 class="display-4">Making a Difference</h2></a>
+                    <p>High Hopes Development Center relies solely on the generosity of individuals, corporations and foundations. On behalf of over 600 families who benefited during our 2015-2016 fiscal year from High Hopes, thank you for your desire to partner with us and for believing in our amazing children.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+      </div>
+      <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Sheric Davis &copy; &nbsp&nbsp&nbsp 06/2019</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+  </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  </body>
+  <script>
+    var nav = document.getElementById("topNav");
+    console.log(nav);
+    var main = document.getElementById("main");
+    var menu = document.getElementsByClassName("menuitems");
+    var close = document.getElementById("closebtn");
+
+    //default to measure if/else from
+    nav.style.height = "75px";
+    main.style.marginTop = "-56px";
+    for (i = 0; i < menu.length; i++){menu[i].style.marginTop="100px";};
+
+    close.addEventListener("click", function(){
+      var menuIcon = close.children;
+      for (i = 0; i < menuIcon.length; i++){
+      menuIcon[i].classList.toggle("active");
+      }
+    });
+
+    function navToggle() {
+    	//to close
+    	if (nav.style.height <= "300px") {
+      nav.style.width = "75px";
+    	nav.style.height = "75px";
+    	main.style.marginTop = "-56px";
+      nav.style.backgroundColor = "rgba(0,0,0,0)";
+        	var i = 0;
+        	for (i = 0; i < menu.length; i++){
+    	menu[i].style.opacity="0.0";
+    	menu[i].style.marginTop="100px";
+    	};
+
+    	}
+    	//to open
+    	else if (nav.style.height <= "75px") {
+      nav.style.width = "98.75%";
+    	nav.style.height = "300px";
+    	main.style.marginTop = "300px";
+      nav.style.backgroundColor = "rgb(192, 208, 229)";
+        	var i = 0;
+        	for (i = 0; i < menu.length; i++){
+    	menu[i].style.opacity="1.0";
+    	menu[i].style.marginTop="0px";
+    	};
+
+    	}
+
+    };
+  </script>
+</html>

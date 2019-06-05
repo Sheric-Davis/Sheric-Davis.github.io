@@ -27,6 +27,11 @@
 
 <style>
 
+@font-face {
+  font-family: "Cassandra";
+  src: url("Cassandra.ttf")
+}
+
 .container{
   color: rgb(36, 36, 36);
 }
@@ -101,7 +106,7 @@ body{
 
 .line1, .line2, .line3{
   margin-top:5px;
-  background-color:#fff;
+  <!--background-color:#fff;-->
   width:25px;
   height:3px;
   display:block;
@@ -109,6 +114,16 @@ body{
   opacity:1.0;
   border-radius:15%;
   transition: all .3s;
+}
+
+.line1{
+  background-color: #fff;
+}
+.line2{
+  background-color: green;
+}
+.line3{
+  background-color:blue;
 }
 
 .line1.active {
@@ -174,7 +189,7 @@ body{
 }
 
 #main {
-    background-color: rgb(249, 249, 249);
+    background-color: #404040;
     transition: margin-top .4s;
     text-align:center;
     margin:auto;
@@ -193,13 +208,14 @@ body{
     </div>
 
     <ul class="menulist">
+      <li><a class="menuitems" href="/index.html">HOME</a></li>
       <li><a class="menuitems" href="./Resume.pdf">RESUME</a></li>
-      <li><a class="menuitems" href="#">PROJECTS</a></li>
+      <li><a class="menuitems" href="projects.html">PROJECTS</a></li>
       <li><a class="menuitems" href="#">CONTACT</a></li>
     </ul>
     </div>
 
-    <div class="main" id="main" style="background-color: #404040; text-align: center;">
+    <div class="main" id="main" style="text-align: center;">
 
       <header style="width:100;">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 100%;">
@@ -232,7 +248,7 @@ body{
       <!-- Page Content -->
       <div style="background-color: rgb(249, 249, 249); width: 85%; margin: 0 auto; text-align: center;">
         <br><br>
-        <h2 class="display-4" style="text-align: center;"><i>Sheric Davis</i></h2>
+        <h2 class="display-4" style="text-align: center; font-family: Cassandra;"><i>Sheric Davis</i></h2>
 
         <!-- Marketing Icons Section -->
 
@@ -241,7 +257,62 @@ body{
               <p style="font-size: 1.2em;">Hi, my name is Sheric Davis and I’m an amature animator.</p>
               <p style="font-size: 1.2em;">I currently live in Cary, North Carolina. I graduated from Lipscomb University located in Nashville, Tennessee, with a BFA in Animation - a new program that me and two others were the first to fully go through. Some would call us guinea pigs but more optimistic people would call us trail blazers. This new program was under the guidance of Tom Bancroft a former Disney animator. In this program, I was able to learn 2D animation, 3D animation, concept design, character design, storyboarding, 3D modeling, and a whole lot more. I did all of this while working about 30-32 hours a week and somehow still managed to graduate with cum laude honors (who needs sleep?).  My dream is to get into the 3D world no matter where I start and really hone my skills. So, please take a look at my work and if you have any questions or just want to chat feel free to contact me!</p>
             </div>
-          </section>
+        </section>
+
+
+        <br>
+        <hr>
+
+        <!-- Portfolio Section -->
+        <h1><i>Projects I've worked on</i></h1><br>
+
+        <div class="row container" style="margin: 0 auto;">
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100 hoverable">
+              <a href="projects.html#BeautyAndTheBeast"><img class="card-img-top" src="https://i.ytimg.com/vi/90oQiXzdiXM/maxresdefault.jpg" width = "400" height = "200" alt="Beauty and the Beast"></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="projects.html#BeautyAndTheBeast">Beauty and the Beast</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="projects.html#DeadSeaSquirrels"><img class="card-img-top" src="https://news.vanderbilt.edu/files/CHC_logo_fi-585x299.jpg" width = "400" height = "200" alt="Dead Sea Squirrels"></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="projects.html#DeadSeaSquirrels">Dead Sea Squirrels</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="projects.html#HangryJack"><img class="card-img-top" src="https://news.vanderbilt.edu/files/CHC_logo_fi-585x299.jpg" width = "400" height = "200" alt="Hangry Jack"></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="projects.html#HangryJack">Hangry Jack</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="http://flower-wallpaper.org/wp-content/uploads/2016/10/kroger-flowers-wallpaper7.jpg" width = "400" height = "200" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Kroger</a>
+                </h4>
+                <p class="card-text">Provided volunteers for recent event</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
 
           <section>
               <div class="container">
@@ -286,89 +357,13 @@ body{
                 </div>
               </section>
 
-
-        <br>
-        <hr>
-
-        <!-- Portfolio Section -->
-        <h2 class = display-4>Our Generous Donors</h2>
-
-        <div class="row container" style="margin: 0 auto;">
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100 hoverable">
-              <a href="#"><img class="card-img-top" src="https://i.ytimg.com/vi/90oQiXzdiXM/maxresdefault.jpg" width = "400" height = "200" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Nashville Predators</a>
-                </h4>
-                <p class="card-text">Go Sounds</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="https://news.vanderbilt.edu/files/CHC_logo_fi-585x299.jpg" width = "400" height = "200" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Community Health Charities</a>
-                </h4>
-                <p class="card-text">Platinum Sponsor</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Community Project</a>
-                </h4>
-                <p class="card-text">Donated serveral $5 Bills</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="http://flower-wallpaper.org/wp-content/uploads/2016/10/kroger-flowers-wallpaper7.jpg" width = "400" height = "200" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Kroger</a>
-                </h4>
-                <p class="card-text">Provided volunteers for recent event</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="https://www.hdwallpapers.net/previews/tapmates-logo-294.jpg" width = "400" height = "200" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Tapmates</a>
-                </h4>
-                <p class="card-text">Donated equipment and funds for pediatric therapy programs</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="http://www.unitedway-york.org/sites/unitedway-york.org/themes/unitedway/images/unitedway_600x315.png" width = "400" height = "200" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">United Way</a>
-                </h4>
-                <p class="card-text">Bronze III Sponsor</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- /.row -->
-
       </div>
       <!-- /.container -->
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; The Gooey Narwhals</p>
+        <p class="m-0 text-center text-white">Sheric Davis &copy; &nbsp&nbsp&nbsp 06/2019</p>
       </div>
       <!-- /.container -->
     </footer>
