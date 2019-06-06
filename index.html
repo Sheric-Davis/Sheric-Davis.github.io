@@ -32,8 +32,12 @@
   src: url("Cassandra.ttf")
 }
 
+body {
+  color: #2b4d70;
+}
+
 .container{
-  color: rgb(36, 36, 36);
+  color: #2b4d70;
 }
 
 .carousel-item img{
@@ -61,7 +65,7 @@
 }
 
 body{
-  background-color: #404040;
+  background-color: #fff;
 }
 
 
@@ -76,8 +80,8 @@ body{
     left: 0;
     background-color: rgba(192, 208, 229, 0);
     <!--box-shadow: 0 4px 4px -3px #232323;
-    -moz-box-shadow: 0 4px 4px -3px #232323;-->
-    -webkit-box-shadow: 0 4px 4px -3px #232323;
+    -moz-box-shadow: 0 4px 4px -3px #2b4d70;-->
+    -webkit-box-shadow: 0 4px 4px -3px #2b4d70;
     overflow: hidden;
     transition: all 0.4s ease-in-out;
     padding-top: 0px;
@@ -106,7 +110,7 @@ body{
 
 .line1, .line2, .line3{
   margin-top:5px;
-  <!--background-color:#fff;-->
+  background-color: #2b4d70;
   width:25px;
   height:3px;
   display:block;
@@ -116,31 +120,21 @@ body{
   transition: all .3s;
 }
 
-.line1{
-  background-color: #fff;
-}
-.line2{
-  background-color: green;
-}
-.line3{
-  background-color:blue;
-}
-
 .line1.active {
   transform: rotate(270deg);
   opacity:0.0;
-  background-color:yellow;
+  background-color:white;
   top:5px;
 }
 
 .line2.active {
   transform: rotate(45deg);
-  background-color:yellow;
+  background-color:white;
 }
 
 .line3.active {
   transform: rotate(-45deg);
-  background-color:yellow;
+  background-color: white;
   top:-7px;
 }
 
@@ -189,7 +183,7 @@ body{
 }
 
 #main {
-    background-color: #404040;
+    background-color: #fff;
     transition: margin-top .4s;
     text-align:center;
     margin:auto;
@@ -246,7 +240,7 @@ body{
 
       <br><br>
       <!-- Page Content -->
-      <div style="background-color: rgb(249, 249, 249); width: 85%; margin: 0 auto; text-align: center;">
+      <div style="background-color: rgb(255, 255, 255); width: 85%; margin: 0 auto; text-align: center;">
         <br><br>
         <h2 class="display-4" style="text-align: center; font-family: Cassandra;"><i>Sheric Davis</i></h2>
 
@@ -419,7 +413,7 @@ body{
       nav.style.width = "98.75%";
     	nav.style.height = "300px";
     	main.style.marginTop = "300px";
-      nav.style.backgroundColor = "rgb(192, 208, 229)";
+      nav.style.backgroundColor = "rgb(43, 77, 112)";
         	var i = 0;
         	for (i = 0; i < menu.length; i++){
     	menu[i].style.opacity="1.0";
