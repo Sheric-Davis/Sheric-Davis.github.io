@@ -21,15 +21,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap" rel="stylesheet">
 
   </head>
 
 <style>
 
 @font-face {
-  font-family: "Cassandra";
-  src: url("Cassandra.ttf")
+  font-family: 'Saira Semi Condensed', sans-serif;
+  src: url()
+}
+
+div {
+  font-family: 'Saira Semi Condensed';
 }
 
 .container{
@@ -62,6 +66,7 @@
 
 body{
   background-color: #ffffff;
+  color: #2b4d70;
 }
 
 
@@ -206,6 +211,7 @@ body{
   display: block;
   width: 80%;
   max-width: 800px;
+  margin-bottom: 15px;
 }
 
 /* Caption of Modal Image */
@@ -271,6 +277,10 @@ body{
   opacity: 0.7;
 }
 
+.video{
+  border-radius: 5px;
+  transition: 0.3s;
+}
 #main {
     transition: margin-top .4s;
     text-align:center;
@@ -295,7 +305,6 @@ body{
       <li><a class="menuitems" href="Resume.pdf">RESUME</a></li>
       <li><a class="menuitems" href="Portfolio.html">PORTFOLIO</a></li>
       <li><a class="menuitems" href="projects.html">PROJECTS</a></li>
-      <li><a class="menuitems" href="#">CONTACT</a></li>
     </ul>
     </div>
 
@@ -306,13 +315,247 @@ body{
         <br>
         <hr>
 
+        <h1 class="projectHeader" id="CGIModeling"><i>CGI Modeling</i></h1><br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <img src="imgs/CGI Modeling/FINALDONEFINISHED.jpg" class="img-fluid image" id="CGIModeling1" onclick="modalToggle(this.id)" alt="Car I modeled, lit, and textured. Instructional videos where provided.">
+                <!--MODAL-->
+                <div id="CGIModeling1Modal" class="modal">
+                  <span class="close" id="CGIModeling1ModalClose">&times;</span>
+                  <img class="modal-content" id="CGIModeling1ModalImage">
+                  <div id="CGIModeling1caption"></div>
+                </div>
+            </div>
+            <div class="view overlay" style="float: right; width: 45%;">
+                <img src="imgs/CGI Modeling/house.jpg" class="img-fluid image" id="CGIModeling2" onclick="modalToggle(this.id)" alt="House I designed and modeled for my senior project.">
+                <!--MODAL-->
+                <div id="CGIModeling2Modal" class="modal">
+                  <span class="close" id="CGIModeling2ModalClose">&times;</span>
+                  <img class="modal-content" id="CGIModeling2ModalImage">
+                  <div id="CGIModeling2caption"></div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <img src="imgs/CGI Modeling/mom.jpg" class="img-fluid image" id="CGIModeling5" onclick="modalToggle(this.id)" alt="Beginning of mom model for my senior project. While I helped some with the character design it was designed by another student.">
+
+                <div id="CGIModeling5Modal" class="modal">
+                  <span class="close" id="CGIModeling5ModalClose">&times;</span>
+                  <img class="modal-content" id="CGIModeling5ModalImage">
+                  <div id="CGIModeling5caption"></div>
+                </div>
+
+            </div>
+            <div class="view overlay" style="float: right; width: 45%;">
+                <img src="imgs/CGI Modeling/mine.jpg" class="img-fluid image" id="CGIModeling6" onclick="modalToggle(this.id)" alt="Completed mom model, unrevised.">
+
+                <div id="CGIModeling6Modal" class="modal">
+                  <span class="close" id="CGIModeling6ModalClose">&times;</span>
+                  <img class="modal-content" id="CGIModeling6ModalImage">
+                  <div id="CGIModeling6caption"></div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <img src="imgs/CGI Modeling/good.jpg" class="img-fluid image" id="CGIModeling7" onclick="modalToggle(this.id)" alt="Mom UV unwrapped.">
+                <!--MODAL-->
+                <div id="CGIModeling7Modal" class="modal">
+                  <span class="close" id="CGIModeling7ModalClose">&times;</span>
+                  <img class="modal-content" id="CGIModeling7ModalImage">
+                  <div id="CGIModeling7caption"></div>
+                </div>
+            </div>
+            <div class="view overlay" style="float: right; width: 45%;">
+                <img src="imgs/CGI Modeling/UVDone.jpg" class="img-fluid image" id="CGIModeling8" onclick="modalToggle(this.id)" alt="Mom UV unwrapped and UV's organized.">
+                <!--MODAL-->
+                <div id="CGIModeling8Modal" class="modal">
+                  <span class="close" id="CGIModeling8ModalClose">&times;</span>
+                  <img class="modal-content" id="CGIModeling8ModalImage">
+                  <div id="CGIModeling8caption"></div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <img src="imgs/CGI Modeling/MomFrontColorPass.jpg" class="img-fluid image" id="CGIModeling9" onclick="modalToggle(this.id)" alt="smaple image">
+                <!--MODAL-->
+                <div id="CGIModeling9Modal" class="modal">
+                  <span class="close" id="CGIModeling9ModalClose">&times;</span>
+                  <img class="modal-content" id="CGIModeling9ModalImage">
+                  <div id="CGIModeling9caption"></div>
+                </div>
+            </div>
+            <div class="view overlay" style="float: right; width: 45%;">
+                <img src="imgs/CGI Modeling/MomUVsCOLORING.png" class="img-fluid image" id="CGIModeling10" onclick="modalToggle(this.id)" alt="sample image">
+                <!--MODAL-->
+                <div id="CGIModeling10Modal" class="modal">
+                  <span class="close" id="CGIModeling10ModalClose">&times;</span>
+                  <img class="modal-content" id="CGIModeling10ModalImage">
+                  <div id="CGIModeling10caption"></div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <img src="imgs/CGI Modeling/MomRendered.png" class="img-fluid image" id="CGIModeling13" onclick="modalToggle(this.id)" alt="Revised, textured, and rigged mom. Rigging was done by a paid person. Modeling and texturing done by me.">
+                <!--MODAL-->
+                <div id="CGIModeling13Modal" class="modal">
+                  <span class="close" id="CGIModeling13ModalClose">&times;</span>
+                  <img class="modal-content" id="CGIModeling13ModalImage">
+                  <div id="CGIModeling13caption"></div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h1 class="projectHeader" id="CGIAnimation"><i>CGI Animation</i></h1><br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <video controls="controls" loop src="imgs/CGI Animation/BallBounce.mov" class="img-fluid video" id="CGIAnimation1" alt="Ball Bounce Animation">
+            </div>
+            <div class="view overlay" style="float: right; width: 45%;">
+                <video controls="controls" loop src="imgs/CGI Animation/BouncingBallCourse_Fixing.mov" class="img-fluid video" id="CGIAnimation2" alt="Ball Course Aniamtion">
+            </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <video controls="controls" loop src="imgs/CGI Animation/ballkick.mov" class="img-fluid video" id="CGIAnimation3" alt="Ball Kick Animation. We filmed video reference for this animation on campus.">
+            </div>
+            <div class="view overlay" style="float: right; width: 45%;">
+                <video controls="controls" loop src="imgs/CGI Animation/catwalk.mov" class="img-fluid video" id="CGIAnimation4" alt="Cat Walk Animation">
+            </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <video controls="controls" loop src="imgs/CGI Animation/course.mov" class="img-fluid video" id="CGIAnimation5" alt="Another angle of the Ball Course Animation.">
+            </div>
+            <div class="view overlay" style="float: right; width: 45%;">
+                <video controls="controls" loop src="imgs/CGI Animation/jump.mov" class="img-fluid video" id="CGIAnimation6" alt="Box Jump Animation. We filmed video reference for this animation on campus.">
+            </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <video controls="controls" muted loop src="imgs/CGI Animation/LuckyYou.mov" class="img-fluid video" id="CGIAnimation7" alt="My fist lipsync animation along with my first full animation using hands. Audio from League of Legends Aurelion Sol.">
+            </div>
+            <div class="view overlay" style="float: right; width: 45%;">
+                <video controls="controls" loop src="imgs/CGI Animation/PlayBlastBallAndTailPolished.mov" class="img-fluid video" id="CGIAnimation8" alt="Ball with Tail Animation">
+            </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <video controls="controls" muted loop src="imgs/CGI Animation/Pleasework.mov" class="img-fluid video" id="CGIAnimation9" alt="Another angle for the Ball with Tail Animation.">
+            </div>
+          </div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h1 class="projectHeader" id="Storyboard"><i>Senior Project Storyboarding</i></h1>
+        <p style="float: left;"><i>This was originally going to be the anamatic for my senior project before teaming up with a fellow senior.</i></p>
+        <br><br><h3 style="float:left;">Story:</h3>
+        <br><p style="float:left;">Meka is seen chasing fireflies. The field is lit by soft
+        dusk light. In the background you hear a woman yell her name.
+        Meka turns to look but a firefly catches her attention. She runs
+        after it, suddenly entering the woods. She ducks under a branch
+        and is suddenly in a different world. Across a short clearing a
+        man is bent over attending a field of glowing flowers.
+        Everything around them glows, including parts of the man. The
+        trees have soft glowing patterns etched into them, they seem to
+        pulsate to an unheard heartbeat. The young child gasps at the
+        beautiful scene before her. The man (name Neon) hears a noise
+        and turns towards the child. He is tall, with a semi-featureless
+        mask like face- he is not a man but a monster. His hands are
+        clawed, and his eyes glow softly. She lets out a strangled noise
+        and stumbles back. He blinks slowly and the glow of the plants
+        glow softens, the pulsing trees seem to pulse slower. He bends
+        down to the garden he was attending and scoops a glowing flower
+        out of the soft soil, putting it in a circular rock pot. He
+        slowly walks towards the girl. She looks scared as he holds out
+        his giant clawed hand to gift her the stone pot. Slowly she
+        takes it. It is the same soft yellow color of the fireflies with
+        a gentle mix of pink. Slowly, the monster man stands up and the
+        child looks up at him. He is so tall, just like the trees. He
+        holds out one clawed finger and she cautiously wraps her hand
+        around it. They walk through the forest, the soft glow of the
+        forest changing colors as the monster man wishes. The child is
+        mystified. In the distance a woman yells the child’s name in a
+        fearful voice, it is watery like they are underwater. The child
+        looks at the monster man with wide eyes. His eyes glow the soft
+        color of a firefly and he gently pushes the child though a hole
+        formed by branches. The child is suddenly in her own world. She
+        turns to look at the monster and his motions to her to go. She
+        runs through the forest until she breaks through the forest
+        line, hugging the beautiful glowing plant to her chest, running
+        towards her name.</p>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 90%; height: auto;">
+                <video src="imgs/2D Stuff/ANIMATION/storyboard.mp4" controls="controls" class="img-fluid video" id="Storyboard1">
+            </div>
+          </div>
+        </section>
+
+        <br>
+        <hr>
+
         <!-- Portfolio Section -->
         <h1 class="projectHeader" id="2DAnimation"><i>2D Animation</i></h1><br>
 
         <section>
           <div class="container" style="overflow: hidden;">
             <div class="view overlay" style="float: left; width: 45%;">
-                <img src="imgs/2D Stuff/ANIMATION/Dab2.gif" class="img-fluid image" id="2DA1" onclick="modalToggle(this.id)" alt="smaple image">
+                <img src="imgs/2D Stuff/ANIMATION/Dab2.gif" class="img-fluid image" id="2DA1" onclick="modalToggle(this.id)" alt="I animated and designed this item for a project.">
                 <!--MODAL-->
                 <div id="2DA1Modal" class="modal">
                   <span class="close" id="2DA1ModalClose">&times;</span>
@@ -321,7 +564,7 @@ body{
                 </div>
             </div>
             <div class="view overlay" style="float: right; width: 45%;">
-                <img src="imgs/2D Stuff/ANIMATION/ShericDavisRadishSpirit.gif" class="img-fluid image" id="2DA2" onclick="modalToggle(this.id)" alt="sample image">
+                <img src="imgs/2D Stuff/ANIMATION/ShericDavisRadishSpirit.gif" class="img-fluid image" id="2DA2" onclick="modalToggle(this.id)" alt="Animation practice">
                 <!--MODAL-->
                 <div id="2DA2Modal" class="modal">
                   <span class="close" id="2DA2ModalClose">&times;</span>
@@ -337,7 +580,7 @@ body{
         <section>
           <div class="container" style="overflow: hidden;">
             <div class="view overlay" style="float: left; width: 45%;">
-                <img src="imgs/2D Stuff/ANIMATION/LighteningGirlCOLORED.gif" class="img-fluid image" id="2DA3" onclick="modalToggle(this.id)" alt="smaple image">
+                <img src="imgs/2D Stuff/ANIMATION/LighteningGirlCOLORED.gif" class="img-fluid image" id="2DA3" onclick="modalToggle(this.id)" alt="Another item I designed and aniamted for the same project as the dab.">
                 <!--MODAL-->
                 <div id="2DA3Modal" class="modal">
                   <span class="close" id="2DA3ModalClose">&times;</span>
@@ -346,7 +589,7 @@ body{
                 </div>
             </div>
             <div class="view overlay" style="float: right; width: 45%;">
-                <img src="imgs/2D Stuff/ANIMATION/CORRECTEDBEAST.gif" class="img-fluid image" id="2DA4" onclick="modalToggle(this.id)" alt="sample image">
+                <img src="imgs/2D Stuff/ANIMATION/CORRECTEDBEAST.gif" class="img-fluid image" id="2DA4" onclick="modalToggle(this.id)" alt="Beast from Over the Garden wall animated finding a present and opening it. All done by me.">
                 <!--MODAL-->
                 <div id="2DA4Modal" class="modal">
                   <span class="close" id="2DA4ModalClose">&times;</span>
@@ -365,7 +608,7 @@ body{
         <section>
           <div class="container" style="overflow: hidden;">
             <div class="view overlay" style="float: left; width: 45%;">
-                <img src="imgs/2D Stuff/CHARACTER DESIGN/FINALTheo.jpg" class="img-fluid image" id="CD1" onclick="modalToggle(this.id)" alt="smaple image">
+                <img src="imgs/2D Stuff/CHARACTER DESIGN/FINALTheo.jpg" class="img-fluid image" id="CD1" onclick="modalToggle(this.id)" alt="Assignment where we are given the name Theodore and that he must be a dog. Design and story by me.">
                 <!--MODAL-->
                 <div id="CD1Modal" class="modal">
                   <span class="close" id="CD1ModalClose">&times;</span>
@@ -374,7 +617,7 @@ body{
                 </div>
             </div>
             <div class="view overlay" style="float: right; width: 45%;">
-                <img src="imgs/2D Stuff/CHARACTER DESIGN/Niema.jpg" class="img-fluid image" id="CD2" onclick="modalToggle(this.id)" alt="sample image">
+                <img src="imgs/2D Stuff/CHARACTER DESIGN/Niema.jpg" class="img-fluid image" id="CD2" onclick="modalToggle(this.id)" alt="Neima is character I deisgned and colored. She's an egyption witch doctor.">
                 <!--MODAL-->
                 <div id="CD2Modal" class="modal">
                   <span class="close" id="CD2ModalClose">&times;</span>
@@ -390,7 +633,7 @@ body{
         <section>
           <div class="container" style="overflow: hidden;">
             <div class="view overlay" style="float: left; width: 45%;">
-                <img src="imgs/2D Stuff/CHARACTER DESIGN/Wall-eThrowback.jpg" class="img-fluid image" id="CD3" onclick="modalToggle(this.id)" alt="smaple image">
+                <img src="imgs/2D Stuff/CHARACTER DESIGN/Wall-eThrowback.jpg" class="img-fluid image" id="CD3" onclick="modalToggle(this.id)" alt="We had to redesign WALL-E into a character from the 1950's. I ended up with this cutie.">
                 <!--MODAL-->
                 <div id="CD3Modal" class="modal">
                   <span class="close" id="CD3ModalClose">&times;</span>
@@ -399,7 +642,7 @@ body{
                 </div>
             </div>
             <div class="view overlay" style="float: right; width: 45%;">
-                <img src="imgs/2D Stuff/CHARACTER DESIGN/LittleGirlCharacter.jpg" class="img-fluid image" id="CD4" onclick="modalToggle(this.id)" alt="sample image">
+                <img src="imgs/2D Stuff/CHARACTER DESIGN/LittleGirlCharacter.jpg" class="img-fluid image" id="CD4" onclick="modalToggle(this.id)" alt="Character Design I did as a warm up.">
                 <!--MODAL-->
                 <div id="CD4Modal" class="modal">
                   <span class="close" id="CD4ModalClose">&times;</span>
@@ -418,7 +661,7 @@ body{
         <section>
           <div class="container" style="overflow: hidden;">
             <div class="view overlay" style="float: left; width: 45%;">
-                <img src="imgs/2D Stuff/CONCEPT DESIGN/EdenPoster2.jpg" class="img-fluid image" id="ConceptD1" onclick="modalToggle(this.id)" alt="smaple image">
+                <img src="imgs/2D Stuff/CONCEPT DESIGN/EdenPoster2.jpg" class="img-fluid image" id="ConceptD1" onclick="modalToggle(this.id)" alt="Poster I created for a band named Eden.">
                 <!--MODAL-->
                 <div id="ConceptD1Modal" class="modal">
                   <span class="close" id="ConceptD1ModalClose">&times;</span>
@@ -427,7 +670,7 @@ body{
                 </div>
             </div>
             <div class="view overlay" style="float: right; width: 45%;">
-                <img src="imgs/2D Stuff/CONCEPT DESIGN/img017.jpg" class="img-fluid image" id="ConceptD2" onclick="modalToggle(this.id)" alt="sample image">
+                <img src="imgs/2D Stuff/CONCEPT DESIGN/img017.jpg" class="img-fluid image" id="ConceptD2" onclick="modalToggle(this.id)" alt="Concept designs for a spear for my senior project.">
                 <!--MODAL-->
                 <div id="ConceptD2Modal" class="modal">
                   <span class="close" id="ConceptD2ModalClose">&times;</span>
@@ -443,7 +686,7 @@ body{
         <section>
           <div class="container" style="overflow: hidden;">
             <div class="view overlay" style="float: left; width: 45%;">
-                <img src="imgs/2D Stuff/CONCEPT DESIGN/SpearDesign.png" class="img-fluid image" id="ConceptD3" onclick="modalToggle(this.id)" alt="smaple image">
+                <img src="imgs/2D Stuff/CONCEPT DESIGN/SpearDesign.png" class="img-fluid image" id="ConceptD3" onclick="modalToggle(this.id)" alt="A layout of how I reached my final design concept for the senior project.">
                 <!--MODAL-->
                 <div id="ConceptD3Modal" class="modal">
                   <span class="close" id="ConceptD3ModalClose">&times;</span>
@@ -452,7 +695,7 @@ body{
                 </div>
             </div>
             <div class="view overlay" style="float: right; width: 45%;">
-                <img src="imgs/2D Stuff/CONCEPT DESIGN/MomsAx.png" class="img-fluid image" id="ConceptD4" onclick="modalToggle(this.id)" alt="smaple image">
+                <img src="imgs/2D Stuff/CONCEPT DESIGN/MomsAx.png" class="img-fluid image" id="ConceptD4" onclick="modalToggle(this.id)" alt="Concept design for a spear for my senior project. This is just an example of how I got to my final design.">
                 <!--MODAL-->
                 <div id="ConceptD4Modal" class="modal">
                   <span class="close" id="ConceptD4ModalClose">&times;</span>
@@ -468,7 +711,7 @@ body{
         <section>
           <div class="container" style="overflow: hidden;">
             <div class="view overlay" style="float: left; width: 45%;">
-                <img src="imgs/2D Stuff/CONCEPT DESIGN/ConceptDevelopment.jpg" class="img-fluid image" id="ConceptD5" onclick="modalToggle(this.id)" alt="smaple image">
+                <img src="imgs/2D Stuff/CONCEPT DESIGN/ConceptDevelopment.jpg" class="img-fluid image" id="ConceptD5" onclick="modalToggle(this.id)" alt="A concept of an 'EcoBot' I designed. This is the one for water. The bot swallows trash and uses its fins to filter water. There is a land bot design that is unfinished.">
                 <p style="display: none;">Testing</p>
                 <!--MODAL-->
                 <div id="ConceptD5Modal" class="modal">
@@ -479,8 +722,287 @@ body{
             </div>
           </div>
         </section>
+
+        <br>
+        <hr>
+
+        <h1 class="projectHeader" id="Sketchbook"><i>Sketchbook</i></h1>
+        <p style="float: left;"><i>This is a collection of concept designs, character designs, figure drawing, and animation planning from my sketchbooks. If you have any questions or wish to inquire about a specific image please don't hesitate to contact me! I'd love to go into depth about them!</i></p><br><br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <img src="imgs/SKETCHBOOK/BabyProwler.png" class="img-fluid image" id="Sketchbook1" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook1Modal" class="modal">
+                  <span class="close" id="Sketchbook1ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook1ModalImage">
+                  <div id="Sketchbook1caption"></div>
+                </div>
+            </div>
+            <div class="view overlay" style="float: right; width: 45%;">
+                <img src="imgs/SKETCHBOOK/CATSTUFF.png" class="img-fluid image" id="Sketchbook2" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook2Modal" class="modal">
+                  <span class="close" id="Sketchbook2ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook2ModalImage">
+                  <div id="Sketchbook2caption"></div>
+                </div>
+            </div>
+          </div>
+        </section>
+
         <br>
 
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <img src="imgs/SKETCHBOOK/DragonEcoBot.png" class="img-fluid image" id="Sketchbook3" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook3Modal" class="modal">
+                  <span class="close" id="Sketchbook3ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook3ModalImage">
+                  <div id="Sketchbook3caption"></div>
+                </div>
+            </div>
+            <div class="view overlay" style="float: right; width: 45%;">
+                <img src="imgs/SKETCHBOOK/EcoBotLand.png" class="img-fluid image" id="Sketchbook4" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook4Modal" class="modal">
+                  <span class="close" id="Sketchbook4ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook4ModalImage">
+                  <div id="Sketchbook4caption"></div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <img src="imgs/SKETCHBOOK/girl.png" class="img-fluid image" id="Sketchbook5" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook5Modal" class="modal">
+                  <span class="close" id="Sketchbook5ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook5ModalImage">
+                  <div id="Sketchbook5caption"></div>
+                </div>
+            </div>
+            <div class="view overlay" style="float: right; width: 45%;">
+                <img src="imgs/SKETCHBOOK/img001.jpg" class="img-fluid image" id="Sketchbook6" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook6Modal" class="modal">
+                  <span class="close" id="Sketchbook6ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook6ModalImage">
+                  <div id="Sketchbook6caption"></div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <img src="imgs/SKETCHBOOK/img004.jpg" class="img-fluid image" id="Sketchbook7" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook7Modal" class="modal">
+                  <span class="close" id="Sketchbook7ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook7ModalImage">
+                  <div id="Sketchbook7caption"></div>
+                </div>
+            </div>
+            <div class="view overlay" style="float: right; width: 45%;">
+                <img src="imgs/SKETCHBOOK/img005.jpg" class="img-fluid image" id="Sketchbook8" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook8Modal" class="modal">
+                  <span class="close" id="Sketchbook8ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook8ModalImage">
+                  <div id="Sketchbook8caption"></div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <img src="imgs/SKETCHBOOK/img008.jpg" class="img-fluid image" id="Sketchbook9" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook9Modal" class="modal">
+                  <span class="close" id="Sketchbook9ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook9ModalImage">
+                  <div id="Sketchbook9caption"></div>
+                </div>
+            </div>
+            <div class="view overlay" style="float: right; width: 45%;">
+                <img src="imgs/SKETCHBOOK/img011.jpg" class="img-fluid image" id="Sketchbook10" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook10Modal" class="modal">
+                  <span class="close" id="Sketchbook10ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook10ModalImage">
+                  <div id="Sketchbook10caption"></div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <img src="imgs/SKETCHBOOK/img013.jpg" class="img-fluid image" id="Sketchbook11" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook11Modal" class="modal">
+                  <span class="close" id="Sketchbook11ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook11ModalImage">
+                  <div id="Sketchbook11caption"></div>
+                </div>
+            </div>
+            <div class="view overlay" style="float: right; width: 45%;">
+                <img src="imgs/SKETCHBOOK/img016.jpg" class="img-fluid image" id="Sketchbook12" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook12Modal" class="modal">
+                  <span class="close" id="Sketchbook12ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook12ModalImage">
+                  <div id="Sketchbook12caption"></div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <img src="imgs/SKETCHBOOK/img017.jpg" class="img-fluid image" id="Sketchbook13" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook13Modal" class="modal">
+                  <span class="close" id="Sketchbook13ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook13ModalImage">
+                  <div id="Sketchbook13caption"></div>
+                </div>
+            </div>
+            <div class="view overlay" style="float: right; width: 45%;">
+                <img src="imgs/SKETCHBOOK/img018.jpg" class="img-fluid image" id="Sketchbook14" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook14Modal" class="modal">
+                  <span class="close" id="Sketchbook14ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook14ModalImage">
+                  <div id="Sketchbook14caption"></div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <img src="imgs/SKETCHBOOK/img019.jpg" class="img-fluid image" id="Sketchbook15" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook15Modal" class="modal">
+                  <span class="close" id="Sketchbook15ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook15ModalImage">
+                  <div id="Sketchbook15caption"></div>
+                </div>
+            </div>
+            <div class="view overlay" style="float: right; width: 45%;">
+                <img src="imgs/SKETCHBOOK/img020.jpg" class="img-fluid image" id="Sketchbook16" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook16Modal" class="modal">
+                  <span class="close" id="Sketchbook16ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook16ModalImage">
+                  <div id="Sketchbook16caption"></div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <img src="imgs/SKETCHBOOK/img021.jpg" class="img-fluid image" id="Sketchbook17" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook17Modal" class="modal">
+                  <span class="close" id="Sketchbook17ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook17ModalImage">
+                  <div id="Sketchbook17caption"></div>
+                </div>
+            </div>
+            <div class="view overlay" style="float: right; width: 45%;">
+                <img src="imgs/SKETCHBOOK/img023.jpg" class="img-fluid image" id="Sketchbook18" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook18Modal" class="modal">
+                  <span class="close" id="Sketchbook18ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook18ModalImage">
+                  <div id="Sketchbook18caption"></div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <img src="imgs/SKETCHBOOK/img024.jpg" class="img-fluid image" id="Sketchbook19" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook19Modal" class="modal">
+                  <span class="close" id="Sketchbook19ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook19ModalImage">
+                  <div id="Sketchbook19caption"></div>
+                </div>
+            </div>
+            <div class="view overlay" style="float: right; width: 45%;">
+                <img src="imgs/SKETCHBOOK/img025.jpg" class="img-fluid image" id="Sketchbook20" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook20Modal" class="modal">
+                  <span class="close" id="Sketchbook20ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook20ModalImage">
+                  <div id="Sketchbook20caption"></div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section>
+          <div class="container" style="overflow: hidden;">
+            <div class="view overlay" style="float: left; width: 45%;">
+                <img src="imgs/SKETCHBOOK/PLANNINGEXAMPLE.png" class="img-fluid image" id="Sketchbook21" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook21Modal" class="modal">
+                  <span class="close" id="Sketchbook21ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook21ModalImage">
+                  <div id="Sketchbook21caption"></div>
+                </div>
+            </div>
+            <div class="view overlay" style="float: right; width: 45%;">
+                <img src="imgs/SKETCHBOOK/SADIE.png" class="img-fluid image" id="Sketchbook22" onclick="modalToggle(this.id)">
+                <!--MODAL-->
+                <div id="Sketchbook22Modal" class="modal">
+                  <span class="close" id="Sketchbook22ModalClose">&times;</span>
+                  <img class="modal-content" id="Sketchbook22ModalImage">
+                  <div id="Sketchbook22caption"></div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
       </div>
       <!-- /.container -->
 
@@ -526,7 +1048,7 @@ body{
 
     function navToggle() {
     	//to close
-    	if (nav.style.height <= "450px") {
+    	if (nav.style.height <= "400px") {
         nav.style.width = "75px";
       	nav.style.height = "75px";
       	main.style.marginTop = "-56px";
@@ -540,8 +1062,8 @@ body{
     	//to open
     	else if (nav.style.height <= "75px") {
         nav.style.width = "98.75%";
-      	nav.style.height = "450px";
-      	main.style.marginTop = "450px";
+      	nav.style.height = "400px";
+      	main.style.marginTop = "400px";
         nav.style.backgroundColor = "rgb(192, 208, 229)";
       	var i = 0;
       	for (i = 0; i < menu.length; i++){
@@ -561,7 +1083,7 @@ body{
       var captionText = document.getElementById(id+"caption");
       modal.style.display = "block";
       modalImg.src = img.src;
-      captionText.innerHTML = "test";
+      captionText.innerHTML = img.alt;
 
       // Get the <span> element that closes the modal
       var span = document.getElementById(id+"ModalClose");
