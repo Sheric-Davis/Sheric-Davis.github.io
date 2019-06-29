@@ -221,7 +221,6 @@ body{
       <li><a class="menuitems" href="Resume.pdf">RESUME</a></li>
       <li><a class="menuitems" href="Portfolio.html">PORTFOLIO</a></li>
       <li><a class="menuitems" href="projects.html">PROJECTS</a></li>
-      <li><a class="menuitems" href="#">CONTACT</a></li>
     </ul>
     </div>
 
@@ -258,11 +257,12 @@ body{
       <!-- Page Content -->
       <div style="background-color: rgb(255, 255, 255); width: 85%; margin: 0 auto; text-align: center;">
         <h2 class="display-4" style="text-align: center;"><b>Sheric Davis</b></h2>
+        <p><a href="mailto:davis.sheric@gmail.com">davis.sheric@gmail.com</a> | <a href="https://www.linkedin.com/in/sheric-davis-826445175/">linkedin</a></p>
 
         <section>
             <div class="container">
               <p style="font-size: 1.2em;">Hi, my name is Sheric Davis and I’m an amature animator.</p>
-              <p style="font-size: 1.2em;">I currently live in Cary, North Carolina. I graduated from Lipscomb University located in Nashville, Tennessee, with a BFA in Animation - a new program that me and two others were the first to fully go through. Some would call us guinea pigs but more optimistic people would call us trail blazers. This new program was under the guidance of Tom Bancroft a former Disney animator. In this program, I was able to learn 2D animation, 3D animation, concept design, character design, storyboarding, 3D modeling, and a whole lot more. I did all of this while working about 30-32 hours a week and somehow still managed to graduate with cum laude honors (who needs sleep?).  My dream is to get into the 3D world no matter where I start and really hone my skills. So, please take a look at my work and if you have any questions or just want to chat feel free to contact me!</p>
+              <p style="font-size: 1.2em;">You’re probably going to say my name wrong the first few times we chat and that’s okay- it’s a little weird and makes a great conversation starter! Another great thing to start with is the fact that I currently live in Cary, North Carolina- a beautiful place with far less humidity than Sedalia, Missouri (my hometown) and Nashville, Tennessee where I graduated from Lipscomb University. I graduated with a Bachelor of Fine Arts in Animation which is a new program started by former Disney animator Tom Bancroft. Professor Bancroft isn’t the only former Disney animator working there either and they even partner with a local CG studio named Five Stones Studio. Under the guidance of these wonderful people I was able to learn a variety of skills including: Character Design, 2D Animation (even the paper kind!), Concept Design, Environmental Design, CG Animation, CG Modeling, Script Writing, Storyboarding, etc. Take a look at my stuff and if you have any comments, questions, or just want to chat please feel free to contact me!</p>
             </div>
         </section>
 
@@ -309,41 +309,40 @@ body{
         <hr>
 
         <!-- Portfolio Section -->
-        <h1><i>Misc. work</i></h1><br>
+      <h1><i>My Personal Work</i></h1><br>
 
         <div class="row container" style="margin: 0 auto;">
           <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100 hoverable">
-              <a href="projects.html#BeautyAndTheBeast"><img class="card-img-top" src="./imgs/BATBThumbnail.png" width = "400" height = "200" alt="Beauty and the Beast"></a>
+              <a href="portfolio.html#CGIModeling"><img class="card-img-top" src="./imgs/CGIModelingThumbnail.png" width = "400" height = "200" alt="Beauty and the Beast"></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="projects.html#BeautyAndTheBeast">Beauty and the Beast</a>
+                  <a href="portfolio.html#CGIModeling">CGI Modeling</a>
                 </h4>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
-              <a href="projects.html#DeadSeaSquirrels"><img class="card-img-top" src="./imgs/DSSThumbnail.png" width = "400" height = "200" alt="Dead Sea Squirrels"></a>
+              <a href="portfolio.html#CGIAnimation"><img class="card-img-top" src="./imgs/CGIAnimationThumbnail.png" width = "400" height = "200" alt="Dead Sea Squirrels"></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="projects.html#DeadSeaSquirrels">Dead Sea Squirrels</a>
+                  <a href="portfolio.html#CGIAnimation">CGI Animation</a>
                 </h4>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
-              <a href="projects.html#HangryJack"><img class="card-img-top" src="./imgs/HangryJackThumbnail.png" width = "400" height = "200" alt="Hangry Jack"></a>
+              <a href="portfolio.html#2DAnimation"><img class="card-img-top" src="./imgs/2DAnimationThumbnail.png" width = "400" height = "200" alt="Hangry Jack"></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="projects.html#HangryJack">Hangry Jack</a>
+                  <a href="portfolio.html#2DAnimation">2D Design</a>
                 </h4>
               </div>
             </div>
           </div>
         </div>
-        <!-- /.row -->
       </div>
 
     <!-- Footer -->
@@ -386,7 +385,7 @@ body{
 
     function navToggle() {
     	//to close
-    	if (nav.style.height <= "450px") {
+    	if (nav.style.height <= "400px") {
       nav.style.width = "75px";
     	nav.style.height = "75px";
     	main.style.marginTop = "-56px";
@@ -401,8 +400,8 @@ body{
     	//to open
     	else if (nav.style.height <= "75px") {
       nav.style.width = "98.75%";
-    	nav.style.height = "450px";
-    	main.style.marginTop = "450px";
+    	nav.style.height = "400px";
+    	main.style.marginTop = "400px";
       nav.style.backgroundColor = "rgb(192, 208, 229)";
         	var i = 0;
         	for (i = 0; i < menu.length; i++){
